@@ -1,0 +1,6 @@
+echo ashwin_cmd
+cp ${WORKSPACE}/Test ${WORKSPACE}/Test.txt
+while IFS='' read -r line || [[ -n "$line" ]]; do
+    x=$line
+    echo "$x"
+done < "${WORKSPACE}/Test.txt"
